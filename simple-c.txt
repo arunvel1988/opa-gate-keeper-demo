@@ -1,0 +1,9 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sComprehensiveSecurity
+metadata:
+  name: require-missing-labels
+spec:
+  parameters:
+    requiredLabels:
+      - "app"
+      - "env"
